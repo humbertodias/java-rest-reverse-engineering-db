@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+             http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+    <!--
+    <persistence-unit name="oracle-jpa" transaction-type="RESOURCE_LOCAL">
+        <provider>
+            org.apache.openjpa.persistence.PersistenceProviderImpl
+        </provider>
+        <properties>
+
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@//localhost:1521/sanity" />
+            <property name="javax.persistence.jdbc.user" value="sanity" />
+            <property name="javax.persistence.jdbc.password" value="sanity" />
+            <property name="openjpa.jdbc.DBDictionary" value="oracle" />
+            <property name="openjpa.Log" value="SQL=TRACE"/>
+
+        </properties>
+    </persistence-unit>
+    -->
+
+    <persistence-unit name="mysql-jpa" transaction-type="RESOURCE_LOCAL">
+        <provider>
+            org.apache.openjpa.persistence.PersistenceProviderImpl
+        </provider>
+        <properties>
+
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mysql?useSSL=false&amp;autoReconnect=true " />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="root" />
+            <property name="openjpa.jdbc.DBDictionary" value="mysql" />
+            <property name="openjpa.Log" value="SQL=TRACE"/>
+
+        </properties>
+    </persistence-unit>
+
+</persistence>

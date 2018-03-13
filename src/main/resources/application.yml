@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+rest:
+  cors:
+    allowed-origins: "*"
+
+#spring:
+#  jooq:
+#    sql-dialect: POSTGRES
+#  datasource:
+#    url: jdbc:postgresql://localhost/php-crud-api
+#    username: php-crud-api
+#    password: php-crud-api
+
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mysql&useSSL=false
+    username: root
+    password: root
+
+
+#spring:
+#  datasource:
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@//localhost:1521/sanity
+#    username: sanity
+#    password: sanity
+
+
+#spring:
+#  jooq:
+#    sql-dialect: H2
+#  datasource:
+#    url: jdbc:h2:mem:test
